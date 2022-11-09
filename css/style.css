@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-color: red;
+}
+.navFixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    animation-name: slideDown;
+    animation-duration:0.5s ;
+    animation-fill-mode: forwards;
+
+
+}
+@keyframes slideDown {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+/*.box{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation-name: ruhaima;
+    animation-duration:1s;
+    /*animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.17,.67,.57,.74);
+    animation-iteration-count:infinite;
+   /* animation-direction:alternate;
+    
+}
+@keyframes ruhaima{
+  0%{
+    width: 300px;
+    height: 300px;
+  }
+  25%{
+    width: 600px;
+    height: 300px;
+  }
+  50%{
+    width: 600px;
+    height: 600px;
+   
+  }
+  75%{
+    width: 300px;
+    height: 600px;
+  }
+  100%{
+    width: 300px;
+    height: 300px;
+   
+  }
+}*/
+  .preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+ 
+}
+/*
+.preloader .preloader_cnt{
+  width: 300px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader .preloader_cnt span
+{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 15px;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+
+  
+}
+.preloader .preloader_cnt span:nth-child(1)
+{
+  background-color: dodgerblue;
+}
+.preloader .preloader_cnt span:nth-child(2)
+{
+  background-color: red;
+  animation-delay: 0.25s;
+}
+.preloader .preloader_cnt span:nth-child(3)
+{
+  background-color: yellow;
+  animation-delay: 0.5s;
+}
+.preloader .preloader_cnt span:nth-child(4)
+{
+  background-color: goldenrod;
+  animation-delay: 0.75s;
+}
+@keyframes bounce {
+  0%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: -120px;
+  }
+  
+}
+*/
+/*
+.preloader .preloader_cnt{
+    width: 300px;
+    height: 300px;
+    border-top: 5px solid blue;
+    border-right: 5px solid transparent;
+    border-radius: 50%;
+    animation-name: spinner;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spinner {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+*/
+
+.preloader .preloader_cnt{
+  width: 300px;
+  height: 300px;
+  background: #1E9600;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: rgba(10, 10, 215, 0.741) 0px 4px 16px, rgba(7, 252, 170, 0.901) 0px 8px 24px, rgba(222, 237, 10, 0.798) 0px 16px 56px;
+
+  animation-name: spinner;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+.preloader .preloader_cnt .circle{
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 50%;
+  
+}
+@keyframes spinner {
+
+0%{
+  transform: rotate(0deg);
+  box-shadow: rgba(215, 95, 10, 0.681) 0px 4px 16px, rgba(252, 7, 199, 0.795) 0px 8px 24px, rgba(222, 237, 10, 0.798) 0px 16px 56px;
+}
+50%{
+  box-shadow: rgba(150, 215, 10, 0.65) 0px 4px 16px, rgba(7, 85, 252, 0.631) 0px 8px 24px, rgba(10, 237, 14, 0.798) 0px 16px 56px;
+}
+100%{
+  transform: rotate(360deg);
+  box-shadow: rgba(215, 75, 10, 0.847) 0px 4px 16px, rgba(7, 252, 113, 0.797) 0px 8px 24px, rgba(237, 181, 203, 0.695) 0px 16px 56px;
+}
+  
+}
